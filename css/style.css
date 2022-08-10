@@ -1,0 +1,147 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body{
+  background: url(../img/logo-img.svg) 100% 100% no-repeat, url(../img/bg-img.png) center no-repeat;
+  font-family: 'Gilroy', sans-serif;
+  color: #FFFFFF;
+  background-size: 32%, cover;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+    url('../fonts/Gilroy-Semibold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto';
+	src: url('../fonts/Notosansdisplaymedium.woff2') format('woff2'),
+    url('../fonts/Notosansdisplaymedium.woff') format('woff');
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 160px;
+}
+
+.header__logo {
+  width: 240px;
+  height: 61px;
+  display: block;
+  background: transparent url(../img/logo-name.svg) no-repeat center;
+}
+
+.header__heading {
+  font-family: 'Noto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0;
+  transform: translateY(-3px);
+}
+
+.main__container {
+  padding: 225px 160px 0;
+}
+
+.main__main-title {
+  max-width: 77%;
+  font-size: 80px;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 1919px) and (min-width: 1025px) {
+  body {
+    background-size: 365px, cover;
+  }
+
+  .main__container {
+    padding: 80px 160px 0;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+
+  body {
+    background-size: 310px, cover;
+  }
+
+  .header__container {
+    padding: 40px 60px 0;
+    gap: 20px;
+  }
+
+  .main__container {
+    padding: 80px 60px 0;
+  }
+
+  .main__main-title {
+    max-width: 80%;
+    font-size: 55px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  body {
+    background-size: 35%, cover;
+  }
+
+  .header__container {
+    padding: 30px 20px 0;
+    gap: 20px;
+  }
+
+  .header__logo {
+    width: 115px;
+    height: 45px;
+    background-size: contain;
+  }
+
+  .header__heading {
+    font-size: 16px;
+  }
+
+  .main__container {
+    padding: 70px 20px 0;
+  }
+
+  .main__main-title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+}
+
+
+
